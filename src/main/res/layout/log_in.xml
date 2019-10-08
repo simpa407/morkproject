@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="match_parent">
+
+    <!--<TextView
+            android:id="@+id/textView2"
+            android:layout_width="411dp"
+            android:layout_height="73dp"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textSize="50sp"
+            />-->
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="280dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:background="@drawable/events"
+            android:scaleType="center"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="65dp"
+            tools:ignore="MissingConstraints"
+            />
+
+    <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="65dp"
+            />
+
+    <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="65dp"
+            />
+
+    <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="40dp"
+            android:onClick="eventClick"
+            android:text="Sign In"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+            tools:ignore="MissingConstraints"
+            />
+
+    <TextView
+            android:layout_width="167dp"
+            android:layout_height="46dp"
+            android:id="@+id/btnForgetPassword"
+            android:textStyle="bold"
+            android:onClick="eventClick"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            android:layout_marginTop="12dp"
+            tools:ignore="MissingConstraints"
+            android:textSize="20dp"
+            android:layout_marginStart="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Forget Password?"
+            />
+
+    <!--<ImageButton
+            android:id="@+id/btnBackSignup"
+            android:layout_width="62dp"
+            android:layout_height="55dp"
+            android:onClick="eventClick"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
